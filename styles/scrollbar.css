@@ -1,0 +1,117 @@
+/* 
+ * 스크롤바 스타일 정의
+ * 이 파일은 애플리케이션의 웹킷 기반 스크롤바 스타일을 정의합니다.
+ * 일반 스크롤바, 얇은 스크롤바, JSON 컨테이너 스크롤바 등 다양한 스타일을 포함합니다.
+ */
+
+/* 
+ * 기본 스크롤바 스타일
+ * 일반적인 스크롤바의 기본 크기와 외형 정의
+ */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+/* 얇은 스크롤바 스타일 */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+
+/* 
+ * 스크롤바 트랙 및 코너 스타일
+ * 스크롤바의 배경 영역 및 모서리 정의
+ */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* 
+ * 스크롤바 썸(핸들) 스타일
+ * 실제 드래그 가능한 스크롤바 핸들 부분 정의
+ */
+::-webkit-scrollbar-thumb {
+  @apply border-6 border-background;
+  background: #0000003a;
+  border-radius: 16px;
+  min-height: 120px;
+  min-width: 120px;
+}
+
+/* 사이드바 스크롤바 썸 스타일 */
+.sidebar::-webkit-scrollbar-thumb {
+  @apply border-6 border-sidebar;
+}
+
+/* 숨김 스크롤바 스타일 */
+.scrollbar-invisible::-webkit-scrollbar {
+  display: none;
+}
+
+/* 
+ * JSON 컨테이너 스크롤바 스타일
+ * JSON 데이터 표시 영역의 특수 스크롤바 정의
+ */
+.json-container::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* JSON 컨테이너 스크롤바 썸 스타일 */
+.json-container::-webkit-scrollbar-thumb {
+  @apply border-none bg-inverse/20 rounded-lg;
+  &:hover {
+    @apply bg-inverse/30;
+  }
+}
+
+/* 
+ * 다크 모드 스크롤바 스타일
+ * 다크 모드에서 사용되는 스크롤바 색상 정의
+ */
+.dark ::-webkit-scrollbar-thumb {
+  background: #ffffff20;
+}
+
+/* 다크 모드 스크롤바 썸 호버 상태 */
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #ffffff50;
+}
+
+/* 
+ * 얇은 스크롤바 썸 스타일
+ * 얇은 스크롤바의 핸들 크기 정의
+ */
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+/* 
+ * 스크롤바 썸 호버 상태
+ * 마우스 오버 시 스크롤바 핸들의 색상 변화
+ */
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* 
+ * 전체 스크롤바 스타일
+ * 전체 스크롤바의 크기 및 모양 정의
+ */
+.scrollbar-full::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* 전체 스크롤바 썸 스타일 */
+.scrollbar-full::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: none;
+}
