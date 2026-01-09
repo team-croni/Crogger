@@ -1,0 +1,41 @@
+/* 
+ * 전역 스타일 설정
+ * 이 파일은 애플리케이션의 전역 스타일을 설정합니다.
+ * Tailwind CSS 초기화, 다크 모드 설정 및 다른 스타일 파일들을 임포트합니다.
+ */
+
+/* Tailwind CSS 초기화 */
+@import "tailwindcss";
+@tailwind utilities;
+
+/* 다크 모드 커스텀 변형 설정 */
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * 스타일 파일 로딩 순서 (의존성 순)
+ * 
+ * 1. variables.css - CSS 변수 정의 (다른 파일에 독립적)
+ * 2. theme.css - Tailwind 테마 변수 정의 ([variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css)에 의존)
+ * 3. base.css - 기본 HTML 요소 스타일 ([variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css) 및 [theme.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/theme.css)에 의존)
+ * 4. scrollbar.css - 스크롤바 스타일 ([variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css)에 의존)
+ * 5. animations.css - 애니메이션 정의 (다른 파일에 독립적)
+ * 6. highlight.css - 코드 하이라이팅 스타일 ([variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css)에 의존)
+ */
+
+/* 테마 변수 정의 - 다른 파일에 독립적인 CSS 변수들 */
+@import "./variables.css";
+
+/* Tailwind 테마 변수 매핑 - [variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css)의 변수 사용 */
+@import "./theme.css";
+
+/* 기본 스타일 정의 - [variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css) 및 [theme.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/theme.css)의 변수 사용 */
+@import "./base.css";
+
+/* 스크롤바 스타일 - [variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css)의 변수 사용 */
+@import "./scrollbar.css";
+
+/* 애니메이션 정의 - 다른 파일에 독립적 */
+@import "./animations.css";
+
+/* 코드 하이라이팅 스타일 - [variables.css](file:///Users/jongyeon/Desktop/Projects/PRODUCT/crogger/styles/variables.css)의 변수 사용 */
+@import "./highlight.css";

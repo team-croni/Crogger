@@ -1,0 +1,41 @@
+{
+  "name": "crogger",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:dummy": "cross-env NEXT_PUBLIC_DUMMY_MODE=true next dev",
+    "prebuild": "node scripts/check-version.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@axiomhq/js": "^1.3.1",
+    "@axiomhq/logging": "^0.1.6",
+    "@svgr/webpack": "^8.1.0",
+    "@tanstack/react-query": "^5.90.12",
+    "@tanstack/react-query-devtools": "^5.91.1",
+    "@tanstack/react-virtual": "^3.13.13",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "ldrs": "^1.1.9",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.1",
+    "next-themes": "^0.4.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-syntax-highlighter": "^16.1.0",
+    "zustand": "^5.0.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
