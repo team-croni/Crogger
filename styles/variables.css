@@ -1,0 +1,102 @@
+/* 
+ * 테마 변수 정의
+ * 이 파일은 애플리케이션의 색상 테마 변수들을 정의합니다.
+ * 라이트 모드와 다크 모드의 색상 변수들이 포함되어 있습니다.
+ */
+
+/* 라이트 모드 테마 변수 */
+:root {
+  /* 배경 및 전경 색상 */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+
+  /* 중립 색상 */
+  --muted: #e9ecef;
+  --muted-foreground: #5f6265;
+
+  /* 팝오버 관련 색상 */
+  --popover: #ffffff;
+  --popover-foreground: #232323;
+  --popover-border: #e0e2e6;
+
+  /* 사이드바 관련 색상 */
+  --sidebar: #ffffff;
+  --sidebar-border: #e0e2e6;
+
+  /* 주요 색상 */
+  --primary: #866fef;
+  --primary-foreground: #ffffff;
+
+  /* 보조 색상 */
+  --secondary: #9a7700;
+  --secondary-foreground: #ffffff;
+
+  /* 액센트 색상 */
+  --accent: #f8f9fa;
+  --accent-foreground: #343a40;
+
+  /* 파괴적 액션 색상 */
+  --destructive: #a83e3c;
+  --destructive-foreground: #ffffff;
+
+  /* 테두리 및 입력 관련 색상 */
+  --border: #d6d9df;
+  --input: #ffffff;
+  --input-border: #dee2e6;
+
+  /* 링 색상 */
+  --ring: #4263eb;
+
+  /* 기본 반경 */
+  --radius: 0.5rem;
+
+  /* 반전 색상 */
+  --inverse: #ffffff;
+}
+
+/* 다크 모드 테마 변수 */
+.dark {
+  /* 배경 및 전경 색상 */
+  --background: #1b1a1c;
+  --foreground: #e8e8e8;
+
+  /* 중립 색상 */
+  --muted: #1d2536;
+  --muted-foreground: #9ca3af;
+
+  /* 팝오버 관련 색상 */
+  --popover: #26282b;
+  --popover-foreground: #e0e0e0;
+  --popover-border: #3a3d41;
+
+  /* 사이드바 관련 색상 */
+  --sidebar: #171617;
+  --sidebar-border: #26272a;
+
+  /* 주요 색상 */
+  --primary: #6f50ff;
+  --primary-foreground: #ffffff;
+
+  /* 보조 색상 */
+  --secondary: #ff7f00;
+  --secondary-foreground: #ffffff;
+
+  /* 액센트 색상 */
+  --accent: #1d2536;
+  --accent-foreground: #e6e8eb;
+
+  /* 파괴적 액션 색상 */
+  --destructive: #d53050;
+  --destructive-foreground: #ffffff;
+
+  /* 테두리 및 입력 관련 색상 */
+  --border: #2f3235;
+  --input: #171719;
+  --input-border: #2d3740;
+
+  /* 링 색상 */
+  --ring: #5c7cfa;
+
+  /* 반전 색상 */
+  --inverse: #000000;
+}

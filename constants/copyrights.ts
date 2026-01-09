@@ -1,0 +1,1 @@
+export const copyright = `© ${new Date().getFullYear()} Croni. All rights reserved.`;
